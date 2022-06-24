@@ -41,6 +41,7 @@
 ### Outliers
 
 **Outliers en coordenadas**: Deben contrastarse con la localidad para verificar consistencia del dato. 
+**Provincia**: Se debe normalizar y utilizar ID de provincia. 
 
 ![Sucursales_latitud](/img/box-Sucursales-Latitud.jpg)
 

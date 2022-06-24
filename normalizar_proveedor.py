@@ -25,7 +25,8 @@ print()
 print('ACCION: Dropear columnas que no aportan información')
 print()
 
-columnas_dropear = ['departament']
+columnas_dropear = ['departamen']
+df = df.drop(columns = columnas_dropear)
 
 print(f'Columnas a dropear: {columnas_dropear}')
 print()

@@ -23,7 +23,7 @@ def main():
     upper_tablas = [x[:4].upper() for x in tablas] # Lista para matchear tablas y archivos
 
     # Cargar configuración para read_csv
-    with open('./Input/config.json') as config_file: # Cargar configuraciones particulares para cada CSV
+    with open('config.json') as config_file: # Cargar configuraciones particulares para cada CSV
         config = json.load(config_file)
 
     # Iterar sobre todas las tablas

@@ -86,7 +86,7 @@
         "encoding": "UTF-8",
         "parse_dates": false,
         "infer_datetime_format": false,
-        "convert_float": ["X", "Y"],
+        "convert_float": ["Longitud", "Latitud"],
         "convert_integer": ["Edad"]
     },
 

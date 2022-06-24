@@ -22,6 +22,16 @@ print(100*'-')
 print(df_calidad)
 print()
 
+print('ACCION: Dropear columnas que no aportan información')
+print()
+
+columnas_dropear = ['Provincia']
+df = df.drop(columns = columnas_dropear)
+
+print(f'Columnas a dropear: {columnas_dropear}')
+print()
+
+
 print('ACCION: Exportar csv')
 
 try:
