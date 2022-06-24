@@ -1,0 +1,107 @@
+
+{
+    "Gasto.csv": {
+        "delimiter": ",", 
+        "decimal": ",",
+        "encoding": "iso-8859-1",
+        "parse_dates": ["Fecha"],
+        "infer_datetime_format": true,
+        "convert_float":["Monto"],
+        "convert_integer": false
+    },
+ 
+    "Proveedores.csv": {
+        "delimiter": ",", 
+        "decimal": ",",
+        "encoding": "iso-8859-1",
+        "parse_dates": false,
+        "infer_datetime_format": false,
+        "convert_float":false,
+        "convert_integer": false
+    },
+
+    "Sucursales.csv": {
+        "delimiter": ";", 
+        "decimal": ",",
+        "encoding": "UTF-8",
+        "parse_dates": false,
+        "infer_datetime_format": false,
+        "convert_float":false,
+        "convert_integer": false
+    },
+
+    "TiposDeGasto.csv": {
+        "delimiter": ",", 
+        "decimal": ",",
+        "encoding": "UTF-8",
+        "parse_dates": false,
+        "infer_datetime_format": false,
+        "convert_float":false,       
+        "convert_integer": false
+    },
+
+    "Venta.csv": {
+        "delimiter": ",", 
+        "decimal": ",",
+        "encoding": "UTF-8",
+        "parse_dates": ["Fecha","Fecha_Entrega"],
+        "infer_datetime_format": true,
+        "convert_float":["Precio"],
+        "convert_integer": ["Cantidad"]
+    },
+
+    "Venta_Dic2020.csv": {
+        "delimiter": ",", 
+        "decimal": ",",
+        "encoding": "UTF-8",
+        "parse_dates": ["Fecha","Fecha_Entrega"],
+        "infer_datetime_format": true,
+        "convert_float":["Precio"],
+        "convert_integer": ["Cantidad"]
+    },
+
+    "Compra.csv": {
+        "delimiter": ",", 
+        "decimal": ",",
+        "encoding": "UTF-8",
+        "parse_dates": ["Fecha"],
+        "infer_datetime_format": true,
+        "convert_float": ["Precio"],
+        "convert_integer": ["Cantidad"]
+    },
+
+    "Clientes.csv": {
+        "delimiter": ";", 
+        "decimal": ",",
+        "encoding": "UTF-8",
+        "parse_dates": false,
+        "infer_datetime_format": false,
+        "convert_float": ["X", "Y"],
+        "convert_integer": ["Edad"]
+    },
+
+    "Clientes_Dic2020.csv": {
+        "delimiter": ";", 
+        "decimal": ",",
+        "encoding": "UTF-8",
+        "parse_dates": false,
+        "infer_datetime_format": false,
+        "convert_float": ["X", "Y"],
+        "convert_integer": ["Edad"]
+    },
+
+    "Localidades.csv": {
+        "delimiter": ",", 
+        "decimal": ".",
+        "encoding": "UTF-8",
+        "parse_dates": false,
+        "infer_datetime_format": false,
+        "convert_float":false,
+        "convert_integer": false
+    },
+
+    "CanalDeVenta.xlsx": {
+      
+    }
+}
+    

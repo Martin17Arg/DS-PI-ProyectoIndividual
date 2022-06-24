@@ -1,0 +1,271 @@
+## *Tabla:* Gasto
+*Archivo:* Gasto.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8640 entries, 0 to 8639
+Data columns (total 5 columns):
+ #   Column       Non-Null Count  Dtype         
+---  ------       --------------  -----         
+ 0   IdGasto      8640 non-null   int64         
+ 1   IdSucursal   8640 non-null   int64         
+ 2   IdTipoGasto  8640 non-null   int64         
+ 3   Fecha        8640 non-null   datetime64[ns]
+ 4   Monto        8640 non-null   float64       
+dtypes: datetime64[ns](1), float64(1), int64(3)
+memory usage: 337.6 KB
+None
+
+             Nulos  Outliers    Ok  Nulos_perc  Outliers_perc  Ok_perc
+IdGasto          0         0  8640         0.0            0.0      1.0
+IdSucursal       0         0  8640         0.0            0.0      1.0
+IdTipoGasto      0         0  8640         0.0            0.0      1.0
+Fecha            0         0  8640         0.0            0.0      1.0
+Monto            0         0  8640         0.0            0.0      1.0
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Proveedores
+*Archivo:* Proveedores.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 14 entries, 0 to 13
+Data columns (total 7 columns):
+ #   Column       Non-Null Count  Dtype 
+---  ------       --------------  ----- 
+ 0   IDProveedor  14 non-null     int64 
+ 1   Nombre       12 non-null     object
+ 2   Address      14 non-null     object
+ 3   City         14 non-null     object
+ 4   State        14 non-null     object
+ 5   Country      14 non-null     object
+ 6   departamen   14 non-null     object
+dtypes: int64(1), object(6)
+memory usage: 912.0+ bytes
+None
+
+             Nulos  Outliers  Ok  Nulos_perc  Outliers_perc   Ok_perc
+IDProveedor      0         0  14    0.000000            0.0  1.000000
+Nombre           2         0  12    0.142857            0.0  0.857143
+Address          0         0  14    0.000000            0.0  1.000000
+City             0         0  14    0.000000            0.0  1.000000
+State            0         0  14    0.000000            0.0  1.000000
+Country          0         0  14    0.000000            0.0  1.000000
+departamen       0         0  14    0.000000            0.0  1.000000
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Sucursales
+*Archivo:* Sucursales.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 31 entries, 0 to 30
+Data columns (total 7 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   ID         31 non-null     int64  
+ 1   Sucursal   31 non-null     object 
+ 2   Direccion  31 non-null     object 
+ 3   Localidad  31 non-null     object 
+ 4   Provincia  31 non-null     object 
+ 5   Latitud    31 non-null     float64
+ 6   Longitud   31 non-null     float64
+dtypes: float64(2), int64(1), object(4)
+memory usage: 1.8+ KB
+None
+
+           Nulos  Outliers  Ok  Nulos_perc  Outliers_perc   Ok_perc
+ID             0         0  31         0.0       0.000000  1.000000
+Sucursal       0         0  31         0.0       0.000000  1.000000
+Direccion      0         0  31         0.0       0.000000  1.000000
+Localidad      0         0  31         0.0       0.000000  1.000000
+Provincia      0         0  31         0.0       0.000000  1.000000
+Latitud        0         1  30         0.0       0.032258  0.967742
+Longitud       0         0  31         0.0       0.000000  1.000000
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Tipos De Gasto
+*Archivo:* TiposDeGasto.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 4 entries, 0 to 3
+Data columns (total 3 columns):
+ #   Column            Non-Null Count  Dtype 
+---  ------            --------------  ----- 
+ 0   IdTipoGasto       4 non-null      int64 
+ 1   Descripcion       4 non-null      object
+ 2   Monto_Aproximado  4 non-null      int64 
+dtypes: int64(2), object(1)
+memory usage: 224.0+ bytes
+None
+
+                  Nulos  Outliers  Ok  Nulos_perc  Outliers_perc  Ok_perc
+IdTipoGasto           0         0   4         0.0            0.0      1.0
+Descripcion           0         0   4         0.0            0.0      1.0
+Monto_Aproximado      0         0   4         0.0            0.0      1.0
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Venta
+*Archivo:* Venta.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 46180 entries, 0 to 46179
+Data columns (total 10 columns):
+ #   Column         Non-Null Count  Dtype         
+---  ------         --------------  -----         
+ 0   IdVenta        46180 non-null  int64         
+ 1   Fecha          46180 non-null  datetime64[ns]
+ 2   Fecha_Entrega  46180 non-null  datetime64[ns]
+ 3   IdCanal        46180 non-null  int64         
+ 4   IdCliente      46180 non-null  int64         
+ 5   IdSucursal     46180 non-null  int64         
+ 6   IdEmpleado     46180 non-null  int64         
+ 7   IdProducto     46180 non-null  int64         
+ 8   Precio         45260 non-null  float64       
+ 9   Cantidad       45296 non-null  float64       
+dtypes: datetime64[ns](2), float64(2), int64(6)
+memory usage: 3.5 MB
+None
+
+               Nulos  Outliers     Ok  Nulos_perc  Outliers_perc   Ok_perc
+IdVenta            0         0  46180    0.000000       0.000000  1.000000
+Fecha              0         0  46180    0.000000       0.000000  1.000000
+Fecha_Entrega      0         0  46180    0.000000       0.000000  1.000000
+IdCanal            0         0  46180    0.000000       0.000000  1.000000
+IdCliente          0         0  46180    0.000000       0.000000  1.000000
+IdSucursal         0         0  46180    0.000000       0.000000  1.000000
+IdEmpleado         0         0  46180    0.000000       0.000000  1.000000
+IdProducto         0         0  46180    0.000000       0.000000  1.000000
+Precio           920        13  45247    0.019922       0.000282  0.979796
+Cantidad         884       695  44601    0.019142       0.015050  0.965808
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Compra
+*Archivo:* Compra.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 11539 entries, 0 to 11538
+Data columns (total 9 columns):
+ #   Column         Non-Null Count  Dtype         
+---  ------         --------------  -----         
+ 0   IdCompra       11539 non-null  int64         
+ 1   Fecha          11539 non-null  datetime64[ns]
+ 2   Fecha_Año      11539 non-null  int64         
+ 3   Fecha_Mes      11539 non-null  int64         
+ 4   Fecha_Periodo  11539 non-null  int64         
+ 5   IdProducto     11539 non-null  int64         
+ 6   Cantidad       11539 non-null  int64         
+ 7   Precio         11172 non-null  float64       
+ 8   IdProveedor    11539 non-null  int64         
+dtypes: datetime64[ns](1), float64(1), int64(7)
+memory usage: 811.5 KB
+None
+
+               Nulos  Outliers     Ok  Nulos_perc  Outliers_perc   Ok_perc
+IdCompra           0         0  11539    0.000000        0.00000  1.000000
+Fecha              0         0  11539    0.000000        0.00000  1.000000
+Fecha_Año          0         0  11539    0.000000        0.00000  1.000000
+Fecha_Mes          0         0  11539    0.000000        0.00000  1.000000
+Fecha_Periodo      0         0  11539    0.000000        0.00000  1.000000
+IdProducto         0         0  11539    0.000000        0.00000  1.000000
+Cantidad           0         0  11539    0.000000        0.00000  1.000000
+Precio           367         6  11166    0.031805        0.00052  0.967675
+IdProveedor        0         0  11539    0.000000        0.00000  1.000000
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Canal de venta
+*Archivo:* CanalDeVenta.xlsx
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3 entries, 0 to 2
+Data columns (total 2 columns):
+ #   Column       Non-Null Count  Dtype 
+---  ------       --------------  ----- 
+ 0   CODIGO       3 non-null      int64 
+ 1   DESCRIPCION  3 non-null      object
+dtypes: int64(1), object(1)
+memory usage: 176.0+ bytes
+None
+
+             Nulos  Outliers  Ok  Nulos_perc  Outliers_perc  Ok_perc
+CODIGO           0         0   3         0.0            0.0      1.0
+DESCRIPCION      0         0   3         0.0            0.0      1.0
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Clientes
+*Archivo:* Clientes.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2384 entries, 0 to 2383
+Data columns (total 10 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   ID                 2384 non-null   int64  
+ 1   Provincia          2359 non-null   object 
+ 2   Nombre_y_Apellido  2365 non-null   object 
+ 3   Domicilio          2341 non-null   object 
+ 4   Telefono           2354 non-null   object 
+ 5   Edad               2383 non-null   float64
+ 6   Localidad          2359 non-null   object 
+ 7   X                  2329 non-null   float64
+ 8   Y                  2332 non-null   float64
+ 9   col10              0 non-null      float64
+dtypes: float64(4), int64(1), object(5)
+memory usage: 186.4+ KB
+None
+
+                   Nulos  Outliers    Ok  Nulos_perc  Outliers_perc   Ok_perc
+ID                     0         0  2384    0.000000       0.000000  1.000000
+Provincia             25         0  2359    0.010487       0.000000  0.989513
+Nombre_y_Apellido     19         0  2365    0.007970       0.000000  0.992030
+Domicilio             43         0  2341    0.018037       0.000000  0.981963
+Telefono              30         0  2354    0.012584       0.000000  0.987416
+Edad                   1         0  2383    0.000419       0.000000  0.999581
+Localidad             25         0  2359    0.010487       0.000000  0.989513
+X                     55        40  2289    0.023070       0.016779  0.960151
+Y                     52        14  2318    0.021812       0.005872  0.972315
+col10               2384         0     0    1.000000       0.000000  0.000000
+----------------------------------------------------------------------------------------------------
+
+## *Tabla:* Localidades
+*Archivo:* Localidades.csv
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 4142 entries, 0 to 4141
+Data columns (total 14 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   categoria                4142 non-null   object 
+ 1   centroide_lat            4142 non-null   float64
+ 2   centroide_lon            4142 non-null   float64
+ 3   departamento_id          4141 non-null   float64
+ 4   departamento_nombre      4141 non-null   object 
+ 5   fuente                   4142 non-null   object 
+ 6   id                       4142 non-null   int64  
+ 7   localidad_censal_id      4142 non-null   int64  
+ 8   localidad_censal_nombre  4142 non-null   object 
+ 9   municipio_id             3599 non-null   float64
+ 10  municipio_nombre         3648 non-null   object 
+ 11  nombre                   4142 non-null   object 
+ 12  provincia_id             4142 non-null   int64  
+ 13  provincia_nombre         4142 non-null   object 
+dtypes: float64(4), int64(3), object(7)
+memory usage: 453.2+ KB
+None
+
+                         Nulos  Outliers  ...  Outliers_perc   Ok_perc
+categoria                    0         0  ...       0.000000  1.000000
+centroide_lat                0        30  ...       0.007243  0.992757
+centroide_lon                0         0  ...       0.000000  1.000000
+departamento_id              1         0  ...       0.000000  0.999759
+departamento_nombre          1         0  ...       0.000000  0.999759
+fuente                       0         0  ...       0.000000  1.000000
+id                           0         0  ...       0.000000  1.000000
+localidad_censal_id          0         0  ...       0.000000  1.000000
+localidad_censal_nombre      0         0  ...       0.000000  1.000000
+municipio_id               543         0  ...       0.000000  0.868904
+municipio_nombre           494         0  ...       0.000000  0.880734
+nombre                       0         0  ...       0.000000  1.000000
+provincia_id                 0         0  ...       0.000000  1.000000
+provincia_nombre             0         0  ...       0.000000  1.000000
+
+[14 rows x 6 columns]
+----------------------------------------------------------------------------------------------------
+
