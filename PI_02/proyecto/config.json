@@ -1,0 +1,13 @@
+{
+    "URL_TICKERS": "http://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+    "TABLE_ID_TICKERS": "constituents",
+    "ARCHIVO_LISTA_TICKERS": "tickers.csv",
+    "DIRECTORIO_DATASETS":"./datasets",
+    "START_DATE_YEAR":2000,
+    "START_DATE_MONTH": 1,
+    "START_DATE_DAY":1,
+    "END_DATE_YEAR": 2021,
+    "END_DATE_MONTH": 12,
+    "END_DATE_DAY": 31
+    
+}
